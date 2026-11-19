@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-19T16:44:00Z",
- "content_hash": "2461ef357faad0e174513861734ac84bc62b8a3038c438365a709bd945577413",
+ "generated_at": "2026-11-19T17:14:00Z",
+ "content_hash": "a02a559d545e8613a2ddc5673160cfa1845b6f605b6282c691bb652d75f7ef96",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -1335,7 +1335,7 @@
     "dd_now": 2342.27,
     "loss_streak_now": 0,
     "loss_streak_max": 7,
-    "open_pl": 19.36,
+    "open_pl": 449.29,
     "open_count": 1,
     "first_trade": "2026-09-24"
    },
@@ -1943,7 +1943,7 @@
      "symbol": "USDJPYp",
      "dir": "SHORT",
      "opened": "2026-11-19 10:35",
-     "pl": 19.36
+     "pl": 449.29
     }
    ]
   },
@@ -1953,19 +1953,19 @@
    "market": "NAS100",
    "desc": "ناسداك، صفقات يومية قليلة",
    "stats": {
-    "net_pl": 1906.39,
-    "trades": 8,
-    "wins": 7,
+    "net_pl": 2414.95,
+    "trades": 9,
+    "wins": 8,
     "losses": 1,
-    "win_rate": 87.5,
-    "profit_factor": 10.15,
-    "avg_win": 302.12,
+    "win_rate": 88.9,
+    "profit_factor": 12.59,
+    "avg_win": 327.92,
     "avg_loss": -208.43,
     "best": 514.8,
     "worst": -208.43,
     "max_dd": 208.43,
-    "dd_now": 208.43,
-    "loss_streak_now": 1,
+    "dd_now": 0.0,
+    "loss_streak_now": 0,
     "loss_streak_max": 1,
     "open_pl": 0,
     "open_count": 0,
@@ -1980,9 +1980,9 @@
     },
     {
      "month": "2026-11",
-     "pl": 624.71,
-     "trades": 4,
-     "wins": 3
+     "pl": 1133.27,
+     "trades": 5,
+     "wins": 4
     }
    ],
    "curve": [
@@ -2033,9 +2033,23 @@
      "date": "2026-11-19",
      "pl": -208.43,
      "cum": 1906.39
+    },
+    {
+     "i": 9,
+     "date": "2026-11-19",
+     "pl": 508.56,
+     "cum": 2414.95
     }
    ],
    "trades": [
+    {
+     "ticket": 239022638,
+     "symbol": "NAS100",
+     "dir": "SHORT",
+     "opened": "2026-11-19 16:55",
+     "closed": "2026-11-19 17:05",
+     "pl": 508.56
+    },
     {
      "ticket": 238959908,
      "symbol": "NAS100",
