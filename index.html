@@ -44,7 +44,7 @@ h2 small{font-size:12px;color:var(--mut);font-weight:400}
 .stat .k{font-size:12.5px;color:var(--mut)}
 .stat .v{font-size:20px;margin-top:2px}
 .chart{position:relative;width:100%}
-.chart svg{display:block;width:100%;height:auto;overflow:visible}
+.chart svg{display:block;width:100%;height:auto;overflow:visible;direction:ltr}
 .tip{position:absolute;pointer-events:none;background:#0E1729;border:1px solid var(--line);border-radius:6px;padding:8px 10px;font-size:12.5px;
   white-space:nowrap;opacity:0;transition:opacity .08s;z-index:2;direction:rtl}
 .tip .mono{font-size:12.5px}
@@ -81,7 +81,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 
   <div id="main" hidden>
     <div class="hero">
-      <div class="big num" id="net"></div>
+      <div class="big num" id="net" dir="ltr"></div>
       <div class="sub" id="netsub"></div>
     </div>
     <div class="stats" id="stats"></div>
@@ -126,6 +126,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
   const NS = "http://www.w3.org/2000/svg";
   const fmt$ = v => (v < 0 ? "−" : (v > 0 ? "+" : "")) + "$" + Math.abs(v).toLocaleString("en-US", {minimumFractionDigits: 2, maximumFractionDigits: 2});
   const fmt0 = v => (v < 0 ? "−" : "") + "$" + Math.abs(v).toLocaleString("en-US", {maximumFractionDigits: 0});
+  const m$ = v => `<bdi dir="ltr" class="num">${fmt$(v)}</bdi>`;
   const cls = v => v > 0 ? "pos" : (v < 0 ? "neg" : "");
   const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
   const ltr = s => `<bdi class="num" dir="ltr">${esc(s)}</bdi>`;
@@ -154,7 +155,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
     const box = $("curve"); box.innerHTML = "";
     const pts = s.curve;
     if (!pts.length) { box.innerHTML = '<div class="empty">لا توجد صفقات مغلقة بعد.</div>'; return; }
-    const W = 1000, H = 300, L = 8, R = 64, T = 12, B = 28;
+    const W = 1000, H = 300, L = 70, R = 12, T = 12, B = 28;
     const ys = [0, ...pts.map(p => p.cum)], ymin = Math.min(...ys), ymax = Math.max(...ys);
     const ticks = niceTicks(ymin, ymax, 4), y0 = Math.min(ticks[0], ymin), y1 = Math.max(ticks[ticks.length - 1], ymax);
     const X = i => L + (W - L - R) * (pts.length === 1 ? 1 : i / pts.length);
@@ -162,7 +163,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
     const svg = el("svg", {viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "منحنى الربح التراكمي"}, box);
     ticks.forEach(t => {
       el("line", {x1: L, x2: W - R, y1: Y(t), y2: Y(t), stroke: t === 0 ? "rgba(230,237,246,.28)" : "var(--grid)", "stroke-width": 1}, svg);
-      const tx = el("text", {x: W - R + 8, y: Y(t) + 4, fill: "var(--mut)", "font-size": 12, "font-family": "JetBrains Mono", "text-anchor": "start"}, svg);
+      const tx = el("text", {x: L - 8, y: Y(t) + 4, fill: "var(--mut)", "font-size": 12, "font-family": "JetBrains Mono", "text-anchor": "end"}, svg);
       tx.textContent = fmt0(t);
     });
     // x labels: first & last date
@@ -183,7 +184,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
       const p = pts[k], cx = X(k + 1), cy = Y(p.cum);
       cross.setAttribute("x1", cx); cross.setAttribute("x2", cx); cross.setAttribute("opacity", 1);
       dot.setAttribute("cx", cx); dot.setAttribute("cy", cy); dot.setAttribute("opacity", 1);
-      tipAt(box, tip, `صفقة ${ltr("#" + p.i)} · ${ltr(p.date)}<br>الصفقة: <span class="mono ${cls(p.pl)}">${fmt$(p.pl)}</span><br>التراكمي: <span class="mono">${fmt$(p.cum)}</span>`,
+      tipAt(box, tip, `صفقة ${ltr("#" + p.i)} · ${ltr(p.date)}<br>الصفقة: <span class="${cls(p.pl)}">${m$(p.pl)}</span><br>التراكمي: ${m$(p.cum)}`,
         cx * r.width / W, cy * r.height / H);
     };
     hit.addEventListener("pointermove", move); hit.addEventListener("pointerdown", move);
@@ -194,14 +195,14 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
     const box = $("months"); box.innerHTML = "";
     const ms = s.monthly;
     if (!ms.length) { box.innerHTML = '<div class="empty">لا توجد بيانات شهرية بعد.</div>'; return; }
-    const W = 1000, H = 220, L = 8, R = 64, T = 22, B = 28;
+    const W = 1000, H = 220, L = 70, R = 12, T = 22, B = 28;
     const vals = [0, ...ms.map(m => m.pl)], ticks = niceTicks(Math.min(...vals), Math.max(...vals), 4);
     const y0 = Math.min(ticks[0], ...vals), y1 = Math.max(ticks[ticks.length - 1], ...vals);
     const Y = v => T + (H - T - B) * (1 - (v - y0) / (y1 - y0 || 1));
     const svg = el("svg", {viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "الربح حسب الشهر"}, box);
     ticks.forEach(t => {
       el("line", {x1: L, x2: W - R, y1: Y(t), y2: Y(t), stroke: t === 0 ? "rgba(230,237,246,.28)" : "var(--grid)", "stroke-width": 1}, svg);
-      const tx = el("text", {x: W - R + 8, y: Y(t) + 4, fill: "var(--mut)", "font-size": 12, "font-family": "JetBrains Mono"}, svg); tx.textContent = fmt0(t);
+      const tx = el("text", {x: L - 8, y: Y(t) + 4, fill: "var(--mut)", "font-size": 12, "font-family": "JetBrains Mono", "text-anchor": "end"}, svg); tx.textContent = fmt0(t);
     });
     const slot = (W - L - R) / Math.max(ms.length, 6), bw = Math.min(64, slot * 0.6);
     const tip = document.createElement("div"); tip.className = "tip"; box.appendChild(tip);
@@ -219,7 +220,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
       const hit = el("rect", {x: cx - slot / 2, y: 0, width: slot, height: H, fill: "transparent"}, svg);
       const show = () => {
         const rr = svg.getBoundingClientRect();
-        tipAt(box, tip, `${ltr(m.month)}<br>الصافي: <span class="mono ${cls(m.pl)}">${fmt$(m.pl)}</span><br>الصفقات: ${ltr(m.trades)} · الرابحة: ${ltr(m.wins)}`, cx * rr.width / W, top * rr.height / H);
+        tipAt(box, tip, `${ltr(m.month)}<br>الصافي: <span class="${cls(m.pl)}">${m$(m.pl)}</span><br>الصفقات: ${ltr(m.trades)} · الرابحة: ${ltr(m.wins)}`, cx * rr.width / W, top * rr.height / H);
       };
       hit.addEventListener("pointermove", show); hit.addEventListener("pointerdown", show);
       hit.addEventListener("pointerleave", () => tip.style.opacity = 0);
@@ -228,7 +229,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
 
   function tradeRows(list, isOpen) {
     const head = `<tr><th>التذكرة</th><th>الرمز</th><th>الاتجاه</th><th>الفتح</th>${isOpen ? "" : '<th class="hide-sm">الإغلاق</th>'}<th class="num">${isOpen ? "عائم" : "الربح/الخسارة"}</th></tr>`;
-    const body = list.map(t => `<tr><td>${ltr(t.ticket)}</td><td>${ltr(t.symbol)}</td><td>${t.dir === "LONG" ? "شراء" : "بيع"}</td><td>${ltr(t.opened)}</td>${isOpen ? "" : `<td class="hide-sm">${ltr(t.closed)}</td>`}<td class="num ${cls(t.pl)}">${fmt$(t.pl)}</td></tr>`).join("");
+    const body = list.map(t => `<tr><td>${ltr(t.ticket)}</td><td>${ltr(t.symbol)}</td><td>${t.dir === "LONG" ? "شراء" : "بيع"}</td><td>${ltr(t.opened)}</td>${isOpen ? "" : `<td class="hide-sm">${ltr(t.closed)}</td>`}<td class="num ${cls(t.pl)}">${m$(t.pl)}</td></tr>`).join("");
     return `<table><thead>${head}</thead><tbody>${body}</tbody></table>`;
   }
 
@@ -248,7 +249,8 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
       ["متوسط الخسارة", fmt$(st.avg_loss)],
       ["أكبر تراجع", fmt$(-st.max_dd)],
       ["التراجع الحالي", fmt$(-st.dd_now)],
-      ["خسائر متتالية الآن", st.loss_streak_now + " / أقصى " + st.loss_streak_max],
+      ["خسائر متتالية الآن", st.loss_streak_now],
+      ["أطول سلسلة خسائر", st.loss_streak_max],
       ["أفضل صفقة", fmt$(st.best)],
       ["أسوأ صفقة", fmt$(st.worst)],
       ["مفتوحة الآن", st.open_count + (st.open_count ? " · " + fmt$(st.open_pl) : "")],
@@ -265,7 +267,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
   }
 
   function overview() {
-    const rows = DATA.strategies.map(s => { const st = s.stats; return `<tr data-k="${esc(s.key)}"><td><b>${esc(s.key)}</b></td><td class="hide-sm">${ltr(s.market)}</td><td class="num">${st.trades}</td><td class="num">${st.win_rate}%</td><td class="num ${cls(st.net_pl)}">${fmt$(st.net_pl)}</td><td class="num hide-sm">${fmt$(-st.dd_now)}</td><td class="num">${st.loss_streak_now}</td></tr>`; }).join("");
+    const rows = DATA.strategies.map(s => { const st = s.stats; return `<tr data-k="${esc(s.key)}"><td><b>${esc(s.key)}</b></td><td class="hide-sm">${ltr(s.market)}</td><td class="num">${st.trades}</td><td class="num">${st.win_rate}%</td><td class="num ${cls(st.net_pl)}">${m$(st.net_pl)}</td><td class="num hide-sm">${m$(-st.dd_now)}</td><td class="num">${st.loss_streak_now}</td></tr>`; }).join("");
     $("overview").innerHTML = `<table class="overview"><thead><tr><th>الاستراتيجية</th><th class="hide-sm">السوق</th><th class="num">الصفقات</th><th class="num">نسبة الربح</th><th class="num">الصافي</th><th class="num hide-sm">التراجع الحالي</th><th class="num">خسائر متتالية</th></tr></thead><tbody>${rows}</tbody></table>`;
     document.querySelectorAll(".overview tbody tr").forEach(tr => tr.addEventListener("click", () => { SHOW = 25; render(tr.dataset.k); window.scrollTo({top: 0, behavior: "smooth"}); }));
   }
