@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-19T15:14:00Z",
- "content_hash": "9c75065e92860e62196103a98bdc64efc232d5b155456d66430277223b611c49",
+ "generated_at": "2026-11-19T15:44:00Z",
+ "content_hash": "a68df281b5141701f131ca96ba038d8c74ce1b18df1d280a3a7e916a69fc1e30",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -11,22 +11,22 @@
    "market": "XAUUSD",
    "desc": "ذهب، جلستا لندن ونيويورك",
    "stats": {
-    "net_pl": 4072.46,
-    "trades": 89,
-    "wins": 38,
+    "net_pl": 4568.35,
+    "trades": 90,
+    "wins": 39,
     "losses": 51,
-    "win_rate": 42.7,
-    "profit_factor": 1.34,
-    "avg_win": 423.85,
+    "win_rate": 43.3,
+    "profit_factor": 1.38,
+    "avg_win": 425.69,
     "avg_loss": -235.96,
     "best": 822.0,
     "worst": -309.4,
     "max_dd": 1499.71,
-    "dd_now": 1499.71,
-    "loss_streak_now": 6,
+    "dd_now": 1003.82,
+    "loss_streak_now": 0,
     "loss_streak_max": 6,
-    "open_pl": 140.42,
-    "open_count": 1,
+    "open_pl": 0,
+    "open_count": 0,
     "first_trade": "2026-09-14"
    },
    "monthly": [
@@ -44,9 +44,9 @@
     },
     {
      "month": "2026-11",
-     "pl": -29.02,
-     "trades": 24,
-     "wins": 8
+     "pl": 466.87,
+     "trades": 25,
+     "wins": 9
     }
    ],
    "curve": [
@@ -583,9 +583,23 @@
      "date": "2026-11-19",
      "pl": -277.83,
      "cum": 4072.46
+    },
+    {
+     "i": 90,
+     "date": "2026-11-19",
+     "pl": 495.89,
+     "cum": 4568.35
     }
    ],
    "trades": [
+    {
+     "ticket": 238915771,
+     "symbol": "XAUUSDp",
+     "dir": "SHORT",
+     "opened": "2026-11-19 13:40",
+     "closed": "2026-11-19 15:30",
+     "pl": 495.89
+    },
     {
      "ticket": 238811347,
      "symbol": "XAUUSDp",
@@ -1299,15 +1313,7 @@
      "pl": 539.24
     }
    ],
-   "open_trades": [
-    {
-     "ticket": 238915771,
-     "symbol": "XAUUSDp",
-     "dir": "SHORT",
-     "opened": "2026-11-19 13:40",
-     "pl": 140.42
-    }
-   ]
+   "open_trades": []
   },
   {
    "key": "S9",
@@ -1329,7 +1335,7 @@
     "dd_now": 2856.97,
     "loss_streak_now": 4,
     "loss_streak_max": 7,
-    "open_pl": 171.9,
+    "open_pl": 615.94,
     "open_count": 2,
     "first_trade": "2026-09-24"
    },
@@ -1923,14 +1929,14 @@
      "symbol": "XAUUSDp",
      "dir": "SHORT",
      "opened": "2026-11-19 04:20",
-     "pl": 196.1
+     "pl": 323.6
     },
     {
      "ticket": 238843801,
      "symbol": "USDJPYp",
      "dir": "SHORT",
      "opened": "2026-11-19 10:35",
-     "pl": -24.2
+     "pl": 292.34
     }
    ]
   },
