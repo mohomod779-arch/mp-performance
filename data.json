@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-19T14:44:00Z",
- "content_hash": "d590baac8ca5f4ff6c70bb050901f20db24fd9a59acc108dec6ad10762b1ee43",
+ "generated_at": "2026-11-19T15:14:00Z",
+ "content_hash": "9c75065e92860e62196103a98bdc64efc232d5b155456d66430277223b611c49",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -25,7 +25,7 @@
     "dd_now": 1499.71,
     "loss_streak_now": 6,
     "loss_streak_max": 6,
-    "open_pl": 31.28,
+    "open_pl": 140.42,
     "open_count": 1,
     "first_trade": "2026-09-14"
    },
@@ -1305,7 +1305,7 @@
      "symbol": "XAUUSDp",
      "dir": "SHORT",
      "opened": "2026-11-19 13:40",
-     "pl": 31.28
+     "pl": 140.42
     }
    ]
   },
@@ -1329,7 +1329,7 @@
     "dd_now": 2856.97,
     "loss_streak_now": 4,
     "loss_streak_max": 7,
-    "open_pl": 241.65,
+    "open_pl": 171.9,
     "open_count": 2,
     "first_trade": "2026-09-24"
    },
@@ -1923,14 +1923,14 @@
      "symbol": "XAUUSDp",
      "dir": "SHORT",
      "opened": "2026-11-19 04:20",
-     "pl": 131.9
+     "pl": 196.1
     },
     {
      "ticket": 238843801,
      "symbol": "USDJPYp",
      "dir": "SHORT",
      "opened": "2026-11-19 10:35",
-     "pl": 109.75
+     "pl": -24.2
     }
    ]
   },
@@ -1940,20 +1940,20 @@
    "market": "NAS100",
    "desc": "ناسداك، صفقات يومية قليلة",
    "stats": {
-    "net_pl": 2114.82,
-    "trades": 7,
+    "net_pl": 1906.39,
+    "trades": 8,
     "wins": 7,
-    "losses": 0,
-    "win_rate": 100.0,
-    "profit_factor": null,
+    "losses": 1,
+    "win_rate": 87.5,
+    "profit_factor": 10.15,
     "avg_win": 302.12,
-    "avg_loss": 0.0,
+    "avg_loss": -208.43,
     "best": 514.8,
-    "worst": 11.05,
-    "max_dd": 0.0,
-    "dd_now": 0.0,
-    "loss_streak_now": 0,
-    "loss_streak_max": 0,
+    "worst": -208.43,
+    "max_dd": 208.43,
+    "dd_now": 208.43,
+    "loss_streak_now": 1,
+    "loss_streak_max": 1,
     "open_pl": 0,
     "open_count": 0,
     "first_trade": "2026-10-22"
@@ -1967,8 +1967,8 @@
     },
     {
      "month": "2026-11",
-     "pl": 833.14,
-     "trades": 3,
+     "pl": 624.71,
+     "trades": 4,
      "wins": 3
     }
    ],
@@ -2014,9 +2014,23 @@
      "date": "2026-11-18",
      "pl": 25.6,
      "cum": 2114.82
+    },
+    {
+     "i": 8,
+     "date": "2026-11-19",
+     "pl": -208.43,
+     "cum": 1906.39
     }
    ],
    "trades": [
+    {
+     "ticket": 238959908,
+     "symbol": "NAS100",
+     "dir": "LONG",
+     "opened": "2026-11-19 15:05",
+     "closed": "2026-11-19 15:12",
+     "pl": -208.43
+    },
     {
      "ticket": 238371036,
      "symbol": "NAS100",
@@ -2082,20 +2096,20 @@
    "market": "NAS100",
    "desc": "كسر نطاق ما قبل افتتاح نيويورك",
    "stats": {
-    "net_pl": 3973.24,
-    "trades": 12,
+    "net_pl": 3879.51,
+    "trades": 13,
     "wins": 3,
-    "losses": 9,
-    "win_rate": 25.0,
-    "profit_factor": 4.88,
+    "losses": 10,
+    "win_rate": 23.1,
+    "profit_factor": 4.47,
     "avg_win": 1665.32,
-    "avg_loss": -113.64,
+    "avg_loss": -111.65,
     "best": 3638.04,
     "worst": -245.43,
-    "max_dd": 343.55,
-    "dd_now": 287.58,
-    "loss_streak_now": 3,
-    "loss_streak_max": 3,
+    "max_dd": 381.31,
+    "dd_now": 381.31,
+    "loss_streak_now": 4,
+    "loss_streak_max": 4,
     "open_pl": 0,
     "open_count": 0,
     "first_trade": "2026-11-03"
@@ -2103,8 +2117,8 @@
    "monthly": [
     {
      "month": "2026-11",
-     "pl": 3973.24,
-     "trades": 12,
+     "pl": 3879.51,
+     "trades": 13,
      "wins": 3
     }
    ],
@@ -2180,9 +2194,23 @@
      "date": "2026-11-18",
      "pl": -92.82,
      "cum": 3973.24
+    },
+    {
+     "i": 13,
+     "date": "2026-11-19",
+     "pl": -93.73,
+     "cum": 3879.51
     }
    ],
    "trades": [
+    {
+     "ticket": 238951391,
+     "symbol": "NAS100",
+     "dir": "LONG",
+     "opened": "2026-11-19 14:50",
+     "closed": "2026-11-19 14:53",
+     "pl": -93.73
+    },
     {
      "ticket": 238341189,
      "symbol": "NAS100",
