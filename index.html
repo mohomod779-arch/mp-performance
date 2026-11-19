@@ -216,7 +216,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
       el("path", {d, fill: up ? "var(--cyan)" : "var(--red)"}, svg);
       const lbl = el("text", {x: cx, y: up ? top - 6 : top + h + 15, fill: "var(--ink)", "font-size": 12, "font-family": "JetBrains Mono", "text-anchor": "middle"}, svg);
       lbl.textContent = fmt0(m.pl);
-      const ml = el("text", {x: cx, y: H - 6, fill: "var(--mut)", "font-size": 12, "font-family": "JetBrains Mono", "text-anchor": "middle"}, svg); ml.textContent = m.month;
+      const ml = el("text", {x: cx, y: H - 6, fill: "var(--mut)", "font-size": 12, "font-family": "JetBrains Mono", "text-anchor": "middle"}, svg); ml.textContent = slot < 80 ? m.month.slice(5) + "/" + m.month.slice(2, 4) : m.month;
       const hit = el("rect", {x: cx - slot / 2, y: 0, width: slot, height: H, fill: "transparent"}, svg);
       const show = () => {
         const rr = svg.getBoundingClientRect();
