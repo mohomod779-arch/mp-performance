@@ -238,6 +238,7 @@ footer{margin-top:56px;padding-top:16px;border-top:1px solid var(--line);font-si
   function render(key) {
     const s = DATA.strategies.find(x => x.key === key) || DATA.strategies[0];
     CUR = s;
+    $("main").hidden = false;
     $("strat").value = s.key;
     try { localStorage.setItem("mp_strat", s.key); } catch (e) {}
     if (location.hash !== "#" + s.key) history.replaceState(null, "", "#" + s.key);
