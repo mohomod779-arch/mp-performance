@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-20T15:14:00Z",
- "content_hash": "f0ebef2327f857b293cb03b343fbe2f69c745b865a13b5c3812d70e7002a8ba2",
+ "generated_at": "2026-11-20T15:44:00Z",
+ "content_hash": "87c791f46852151002e6e37c11695e13429fbe1552dc8fbebfc4e8fbaa2960bf",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -25,7 +25,7 @@
     "dd_now": 648.5,
     "loss_streak_now": 0,
     "loss_streak_max": 6,
-    "open_pl": -3.72,
+    "open_pl": 164.4,
     "open_count": 1,
     "first_trade": "2026-09-14"
    },
@@ -1333,7 +1333,7 @@
      "symbol": "XAUUSDp",
      "dir": "SHORT",
      "opened": "2026-11-20 15:10",
-     "pl": -3.72
+     "pl": 164.4
     }
    ]
   },
@@ -2151,29 +2151,29 @@
    "market": "NAS100",
    "desc": "كسر نطاق ما قبل افتتاح نيويورك",
    "stats": {
-    "net_pl": 3879.51,
-    "trades": 13,
+    "net_pl": 3787.91,
+    "trades": 14,
     "wins": 3,
-    "losses": 10,
-    "win_rate": 23.1,
-    "profit_factor": 4.47,
+    "losses": 11,
+    "win_rate": 21.4,
+    "profit_factor": 4.14,
     "avg_win": 1665.32,
-    "avg_loss": -111.65,
+    "avg_loss": -109.82,
     "best": 3638.04,
     "worst": -245.43,
-    "max_dd": 381.31,
-    "dd_now": 381.31,
-    "loss_streak_now": 4,
-    "loss_streak_max": 4,
-    "open_pl": -76.8,
-    "open_count": 1,
+    "max_dd": 472.91,
+    "dd_now": 472.91,
+    "loss_streak_now": 5,
+    "loss_streak_max": 5,
+    "open_pl": 0,
+    "open_count": 0,
     "first_trade": "2026-11-03"
    },
    "monthly": [
     {
      "month": "2026-11",
-     "pl": 3879.51,
-     "trades": 13,
+     "pl": 3787.91,
+     "trades": 14,
      "wins": 3
     }
    ],
@@ -2255,9 +2255,23 @@
      "date": "2026-11-19",
      "pl": -93.73,
      "cum": 3879.51
+    },
+    {
+     "i": 14,
+     "date": "2026-11-20",
+     "pl": -91.6,
+     "cum": 3787.91
     }
    ],
    "trades": [
+    {
+     "ticket": 239643015,
+     "symbol": "NAS100",
+     "dir": "LONG",
+     "opened": "2026-11-20 14:55",
+     "closed": "2026-11-20 15:14",
+     "pl": -91.6
+    },
     {
      "ticket": 238951391,
      "symbol": "NAS100",
@@ -2363,15 +2377,7 @@
      "pl": -245.43
     }
    ],
-   "open_trades": [
-    {
-     "ticket": 239643015,
-     "symbol": "NAS100",
-     "dir": "LONG",
-     "opened": "2026-11-20 14:55",
-     "pl": -76.8
-    }
-   ]
+   "open_trades": []
   },
   {
    "key": "S12G",
