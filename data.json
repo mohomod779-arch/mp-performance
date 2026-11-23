@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-23T19:44:00Z",
- "content_hash": "7ea2149c4b474c5c1be50e35addd608a01c21289697200f17070520c1032c967",
+ "generated_at": "2026-11-23T20:14:00Z",
+ "content_hash": "ad814a494549214e7af61dcb054c4daa8f5b244bc7d49e40ecace6ebb1c3c829",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -1363,22 +1363,22 @@
    "market": "XAUUSD / NAS100 / FX",
    "desc": "مناطق دعم ومقاومة جديدة على فريم 15 دقيقة",
    "stats": {
-    "net_pl": 2875.32,
-    "trades": 42,
+    "net_pl": 2726.59,
+    "trades": 43,
     "wins": 18,
-    "losses": 24,
-    "win_rate": 42.9,
-    "profit_factor": 1.47,
+    "losses": 25,
+    "win_rate": 41.9,
+    "profit_factor": 1.43,
     "avg_win": 502.96,
-    "avg_loss": -257.42,
+    "avg_loss": -253.07,
     "best": 1631.84,
     "worst": -577.5,
     "max_dd": 2856.97,
-    "dd_now": 1828.21,
-    "loss_streak_now": 0,
+    "dd_now": 1976.94,
+    "loss_streak_now": 1,
     "loss_streak_max": 7,
-    "open_pl": 132.98,
-    "open_count": 2,
+    "open_pl": 218.48,
+    "open_count": 1,
     "first_trade": "2026-09-24"
    },
    "monthly": [
@@ -1396,8 +1396,8 @@
     },
     {
      "month": "2026-11",
-     "pl": -369.35,
-     "trades": 13,
+     "pl": -518.08,
+     "trades": 14,
      "wins": 5
     }
    ],
@@ -1653,9 +1653,23 @@
      "date": "2026-11-19",
      "pl": 514.06,
      "cum": 2875.32
+    },
+    {
+     "i": 43,
+     "date": "2026-11-23",
+     "pl": -148.73,
+     "cum": 2726.59
     }
    ],
    "trades": [
+    {
+     "ticket": 240870875,
+     "symbol": "USDJPYp",
+     "dir": "LONG",
+     "opened": "2026-11-23 19:35",
+     "closed": "2026-11-23 20:04",
+     "pl": -148.73
+    },
     {
      "ticket": 238843801,
      "symbol": "USDJPYp",
@@ -1999,14 +2013,7 @@
      "symbol": "XAUUSDp",
      "dir": "SHORT",
      "opened": "2026-11-23 14:20",
-     "pl": 213.2
-    },
-    {
-     "ticket": 240870875,
-     "symbol": "USDJPYp",
-     "dir": "LONG",
-     "opened": "2026-11-23 19:35",
-     "pl": -80.22
+     "pl": 218.48
     }
    ]
   },
