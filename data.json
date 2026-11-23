@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-23T01:44:01Z",
- "content_hash": "8cfb2a6986e0b407d8cbb02ea3d5fd2308d85fd1d2023326221ec923d67e6de3",
+ "generated_at": "2026-11-23T02:14:01Z",
+ "content_hash": "ac2407ecd9bcce7bffd9cd58c6da93d01b73d2248e2eb715cd54760aee5d8c98",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -2405,7 +2405,7 @@
     "dd_now": 1193.3,
     "loss_streak_now": 3,
     "loss_streak_max": 3,
-    "open_pl": 434.5,
+    "open_pl": 306.45,
     "open_count": 1,
     "first_trade": "2026-11-05"
    },
@@ -2567,7 +2567,7 @@
      "symbol": "XAUUSDp",
      "dir": "LONG",
      "opened": "2026-11-20 21:00",
-     "pl": 434.5
+     "pl": 306.45
     }
    ]
   }
