@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24T15:14:01Z",
- "content_hash": "9e1e7337cb08e4e5363e620af90c4e8c98157f81b947605bd05974f7a92ef67c",
+ "generated_at": "2026-11-24T15:44:00Z",
+ "content_hash": "8192278c693fd682fe7a9b3b7d176abe912da7257ee8217b91dbc182564244fa",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -1377,22 +1377,22 @@
    "market": "XAUUSD / NAS100 / FX",
    "desc": "مناطق دعم ومقاومة جديدة على فريم 15 دقيقة",
    "stats": {
-    "net_pl": 2726.59,
-    "trades": 43,
-    "wins": 18,
+    "net_pl": 3270.03,
+    "trades": 44,
+    "wins": 19,
     "losses": 25,
-    "win_rate": 41.9,
-    "profit_factor": 1.43,
-    "avg_win": 502.96,
+    "win_rate": 43.2,
+    "profit_factor": 1.52,
+    "avg_win": 505.09,
     "avg_loss": -253.07,
     "best": 1631.84,
     "worst": -577.5,
     "max_dd": 2856.97,
-    "dd_now": 1976.94,
-    "loss_streak_now": 1,
+    "dd_now": 1433.5,
+    "loss_streak_now": 0,
     "loss_streak_max": 7,
-    "open_pl": 503.12,
-    "open_count": 1,
+    "open_pl": 0,
+    "open_count": 0,
     "first_trade": "2026-09-24"
    },
    "monthly": [
@@ -1410,9 +1410,9 @@
     },
     {
      "month": "2026-11",
-     "pl": -518.08,
-     "trades": 14,
-     "wins": 5
+     "pl": 25.36,
+     "trades": 15,
+     "wins": 6
     }
    ],
    "curve": [
@@ -1673,9 +1673,23 @@
      "date": "2026-11-23",
      "pl": -148.73,
      "cum": 2726.59
+    },
+    {
+     "i": 44,
+     "date": "2026-11-24",
+     "pl": 543.44,
+     "cum": 3270.03
     }
    ],
    "trades": [
+    {
+     "ticket": 240658296,
+     "symbol": "XAUUSDp",
+     "dir": "SHORT",
+     "opened": "2026-11-23 14:20",
+     "closed": "2026-11-24 15:15",
+     "pl": 543.44
+    },
     {
      "ticket": 240870875,
      "symbol": "USDJPYp",
@@ -2021,15 +2035,7 @@
      "pl": 523.55
     }
    ],
-   "open_trades": [
-    {
-     "ticket": 240658296,
-     "symbol": "XAUUSDp",
-     "dir": "SHORT",
-     "opened": "2026-11-23 14:20",
-     "pl": 503.12
-    }
-   ]
+   "open_trades": []
   },
   {
    "key": "I3",
