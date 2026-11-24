@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-24T14:14:01Z",
- "content_hash": "b662386a1a88255cc517990a8328061e46fb9f0a689ca2518e95f75108d16660",
+ "generated_at": "2026-11-24T14:44:01Z",
+ "content_hash": "e44500f44024ab873a1cd42981bea625605197364c670c46129cdfab542bc30c",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -25,7 +25,7 @@
     "dd_now": 410.54,
     "loss_streak_now": 1,
     "loss_streak_max": 6,
-    "open_pl": -125.92,
+    "open_pl": 29.28,
     "open_count": 1,
     "first_trade": "2026-09-14"
    },
@@ -1361,7 +1361,7 @@
      "symbol": "XAUUSDp",
      "dir": "LONG",
      "opened": "2026-11-24 08:45",
-     "pl": -125.92
+     "pl": 29.28
     }
    ]
   },
@@ -1385,7 +1385,7 @@
     "dd_now": 1976.94,
     "loss_streak_now": 1,
     "loss_streak_max": 7,
-    "open_pl": 400.32,
+    "open_pl": 322.72,
     "open_count": 1,
     "first_trade": "2026-09-24"
    },
@@ -2021,7 +2021,7 @@
      "symbol": "XAUUSDp",
      "dir": "SHORT",
      "opened": "2026-11-23 14:20",
-     "pl": 400.32
+     "pl": 322.72
     }
    ]
   },
@@ -2449,29 +2449,29 @@
    "market": "XAUUSD",
    "desc": "ذهب، صفقة ليلية",
    "stats": {
-    "net_pl": -377.55,
-    "trades": 11,
+    "net_pl": -470.15,
+    "trades": 12,
     "wins": 4,
-    "losses": 7,
-    "win_rate": 36.4,
-    "profit_factor": 0.77,
+    "losses": 8,
+    "win_rate": 33.3,
+    "profit_factor": 0.73,
     "avg_win": 311.82,
-    "avg_loss": -232.12,
+    "avg_loss": -214.68,
     "best": 815.75,
     "worst": -414.45,
     "max_dd": 1193.3,
-    "dd_now": 377.55,
-    "loss_streak_now": 0,
+    "dd_now": 470.15,
+    "loss_streak_now": 1,
     "loss_streak_max": 3,
-    "open_pl": -96.85,
-    "open_count": 1,
+    "open_pl": 0,
+    "open_count": 0,
     "first_trade": "2026-11-05"
    },
    "monthly": [
     {
      "month": "2026-11",
-     "pl": -377.55,
-     "trades": 11,
+     "pl": -470.15,
+     "trades": 12,
      "wins": 4
     }
    ],
@@ -2541,9 +2541,23 @@
      "date": "2026-11-23",
      "pl": 815.75,
      "cum": -377.55
+    },
+    {
+     "i": 12,
+     "date": "2026-11-24",
+     "pl": -92.6,
+     "cum": -470.15
     }
    ],
    "trades": [
+    {
+     "ticket": 240909609,
+     "symbol": "XAUUSDp",
+     "dir": "LONG",
+     "opened": "2026-11-23 21:00",
+     "closed": "2026-11-24 14:30",
+     "pl": -92.6
+    },
     {
      "ticket": 239892988,
      "symbol": "XAUUSDp",
@@ -2633,15 +2647,7 @@
      "pl": -330.35
     }
    ],
-   "open_trades": [
-    {
-     "ticket": 240909609,
-     "symbol": "XAUUSDp",
-     "dir": "LONG",
-     "opened": "2026-11-23 21:00",
-     "pl": -96.85
-    }
-   ]
+   "open_trades": []
   }
  ]
 }
