@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-25T22:14:00Z",
- "content_hash": "0b9f461e47c6a28d29a29f0c1b5ce7294e8f41a4d21b53f830021f27bff2e7de",
+ "generated_at": "2026-11-25T22:44:00Z",
+ "content_hash": "f0d64311df851d562b65fd1761e4074cedcecd3f660a17a9e080aaf1f32bc70a",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -1405,7 +1405,7 @@
     "dd_now": 2194.36,
     "loss_streak_now": 2,
     "loss_streak_max": 7,
-    "open_pl": -28.82,
+    "open_pl": -22.32,
     "open_count": 1,
     "first_trade": "2026-09-24"
    },
@@ -2125,7 +2125,7 @@
      "symbol": "USDJPYp",
      "dir": "SHORT",
      "opened": "2026-11-25 19:05",
-     "pl": -28.82
+     "pl": -22.32
     }
    ]
   },
