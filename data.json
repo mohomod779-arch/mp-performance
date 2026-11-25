@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-25T11:14:00Z",
- "content_hash": "9ffbddc88ca84f57719ba0ca27206940b9aaabdaa4b9c99d91238eeccaa4c2d0",
+ "generated_at": "2026-11-25T11:44:00Z",
+ "content_hash": "4ec38f5ca949a5095224a0996f9c8e6c11dcd0897c015afca6a284644b44ca0b",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -11,22 +11,22 @@
    "market": "XAUUSD",
    "desc": "ذهب، جلستا لندن ونيويورك",
    "stats": {
-    "net_pl": 4911.71,
-    "trades": 94,
+    "net_pl": 4619.39,
+    "trades": 95,
     "wins": 41,
-    "losses": 53,
-    "win_rate": 43.6,
-    "profit_factor": 1.39,
+    "losses": 54,
+    "win_rate": 43.2,
+    "profit_factor": 1.36,
     "avg_win": 425.4,
-    "avg_loss": -236.41,
+    "avg_loss": -237.44,
     "best": 822.0,
     "worst": -309.4,
     "max_dd": 1499.71,
-    "dd_now": 660.46,
-    "loss_streak_now": 2,
+    "dd_now": 952.78,
+    "loss_streak_now": 3,
     "loss_streak_max": 6,
-    "open_pl": 60.0,
-    "open_count": 1,
+    "open_pl": 0,
+    "open_count": 0,
     "first_trade": "2026-09-14"
    },
    "monthly": [
@@ -44,8 +44,8 @@
     },
     {
      "month": "2026-11",
-     "pl": 810.23,
-     "trades": 29,
+     "pl": 517.91,
+     "trades": 30,
      "wins": 11
     }
    ],
@@ -613,9 +613,23 @@
      "date": "2026-11-24",
      "pl": -249.92,
      "cum": 4911.71
+    },
+    {
+     "i": 95,
+     "date": "2026-11-25",
+     "pl": -292.32,
+     "cum": 4619.39
     }
    ],
    "trades": [
+    {
+     "ticket": 241962907,
+     "symbol": "XAUUSDp",
+     "dir": "LONG",
+     "opened": "2026-11-25 07:30",
+     "closed": "2026-11-25 11:36",
+     "pl": -292.32
+    },
     {
      "ticket": 241239036,
      "symbol": "XAUUSDp",
@@ -1369,15 +1383,7 @@
      "pl": 539.24
     }
    ],
-   "open_trades": [
-    {
-     "ticket": 241962907,
-     "symbol": "XAUUSDp",
-     "dir": "LONG",
-     "opened": "2026-11-25 07:30",
-     "pl": 60.0
-    }
-   ]
+   "open_trades": []
   },
   {
    "key": "S9",
@@ -2539,7 +2545,7 @@
     "dd_now": 470.15,
     "loss_streak_now": 1,
     "loss_streak_max": 3,
-    "open_pl": -124.65,
+    "open_pl": -210.25,
     "open_count": 1,
     "first_trade": "2026-11-05"
    },
@@ -2729,7 +2735,7 @@
      "symbol": "XAUUSDp",
      "dir": "LONG",
      "opened": "2026-11-24 21:00",
-     "pl": -124.65
+     "pl": -210.25
     }
    ]
   }
