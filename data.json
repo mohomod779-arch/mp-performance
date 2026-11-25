@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-25T09:14:00Z",
- "content_hash": "9e66baf15ec79f34b44ce025bddc8c009f3d2de2f2645bbcb64a286ef0b14bf9",
+ "generated_at": "2026-11-25T09:44:00Z",
+ "content_hash": "9ffbddc88ca84f57719ba0ca27206940b9aaabdaa4b9c99d91238eeccaa4c2d0",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -25,7 +25,7 @@
     "dd_now": 660.46,
     "loss_streak_now": 2,
     "loss_streak_max": 6,
-    "open_pl": 170.16,
+    "open_pl": 60.0,
     "open_count": 1,
     "first_trade": "2026-09-14"
    },
@@ -1375,7 +1375,7 @@
      "symbol": "XAUUSDp",
      "dir": "LONG",
      "opened": "2026-11-25 07:30",
-     "pl": 170.16
+     "pl": 60.0
     }
    ]
   },
@@ -1385,22 +1385,22 @@
    "market": "XAUUSD / NAS100 / FX",
    "desc": "مناطق دعم ومقاومة جديدة على فريم 15 دقيقة",
    "stats": {
-    "net_pl": 2578.09,
-    "trades": 46,
-    "wins": 19,
+    "net_pl": 2851.75,
+    "trades": 47,
+    "wins": 20,
     "losses": 27,
-    "win_rate": 41.3,
-    "profit_factor": 1.37,
-    "avg_win": 505.09,
+    "win_rate": 42.6,
+    "profit_factor": 1.41,
+    "avg_win": 493.52,
     "avg_loss": -259.95,
     "best": 1631.84,
     "worst": -577.5,
     "max_dd": 2856.97,
-    "dd_now": 2125.44,
-    "loss_streak_now": 2,
+    "dd_now": 1851.78,
+    "loss_streak_now": 0,
     "loss_streak_max": 7,
-    "open_pl": 46.24,
-    "open_count": 1,
+    "open_pl": 0,
+    "open_count": 0,
     "first_trade": "2026-09-24"
    },
    "monthly": [
@@ -1418,9 +1418,9 @@
     },
     {
      "month": "2026-11",
-     "pl": -666.58,
-     "trades": 17,
-     "wins": 6
+     "pl": -392.92,
+     "trades": 18,
+     "wins": 7
     }
    ],
    "curve": [
@@ -1699,9 +1699,23 @@
      "date": "2026-11-25",
      "pl": -232.56,
      "cum": 2578.09
+    },
+    {
+     "i": 47,
+     "date": "2026-11-25",
+     "pl": 273.66,
+     "cum": 2851.75
     }
    ],
    "trades": [
+    {
+     "ticket": 242012864,
+     "symbol": "USDJPYp",
+     "dir": "SHORT",
+     "opened": "2026-11-25 08:50",
+     "closed": "2026-11-25 09:20",
+     "pl": 273.66
+    },
     {
      "ticket": 241837186,
      "symbol": "NAS100",
@@ -2071,15 +2085,7 @@
      "pl": 523.55
     }
    ],
-   "open_trades": [
-    {
-     "ticket": 242012864,
-     "symbol": "USDJPYp",
-     "dir": "SHORT",
-     "opened": "2026-11-25 08:50",
-     "pl": 46.24
-    }
-   ]
+   "open_trades": []
   },
   {
    "key": "I3",
@@ -2533,7 +2539,7 @@
     "dd_now": 470.15,
     "loss_streak_now": 1,
     "loss_streak_max": 3,
-    "open_pl": -101.7,
+    "open_pl": -124.65,
     "open_count": 1,
     "first_trade": "2026-11-05"
    },
@@ -2723,7 +2729,7 @@
      "symbol": "XAUUSDp",
      "dir": "LONG",
      "opened": "2026-11-24 21:00",
-     "pl": -101.7
+     "pl": -124.65
     }
    ]
   }
