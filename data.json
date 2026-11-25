@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-25T13:14:00Z",
- "content_hash": "595ac40df22e43ec87d21f6023438dc76c3cdfb79c039e14f7759ef9f20e0fad",
+ "generated_at": "2026-11-25T13:44:00Z",
+ "content_hash": "530b3af9ba19c7dacebe9e5c45ab0f95ffd9770aeedc2fb5eb893ae41ff3075e",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -2545,29 +2545,29 @@
    "market": "XAUUSD",
    "desc": "ذهب، صفقة ليلية",
    "stats": {
-    "net_pl": -470.15,
-    "trades": 12,
+    "net_pl": -825.6,
+    "trades": 13,
     "wins": 4,
-    "losses": 8,
-    "win_rate": 33.3,
-    "profit_factor": 0.73,
+    "losses": 9,
+    "win_rate": 30.8,
+    "profit_factor": 0.6,
     "avg_win": 311.82,
-    "avg_loss": -214.68,
+    "avg_loss": -230.32,
     "best": 815.75,
     "worst": -414.45,
     "max_dd": 1193.3,
-    "dd_now": 470.15,
-    "loss_streak_now": 1,
+    "dd_now": 825.6,
+    "loss_streak_now": 2,
     "loss_streak_max": 3,
-    "open_pl": -186.75,
-    "open_count": 1,
+    "open_pl": 0,
+    "open_count": 0,
     "first_trade": "2026-11-05"
    },
    "monthly": [
     {
      "month": "2026-11",
-     "pl": -470.15,
-     "trades": 12,
+     "pl": -825.6,
+     "trades": 13,
      "wins": 4
     }
    ],
@@ -2643,9 +2643,23 @@
      "date": "2026-11-24",
      "pl": -92.6,
      "cum": -470.15
+    },
+    {
+     "i": 13,
+     "date": "2026-11-25",
+     "pl": -355.45,
+     "cum": -825.6
     }
    ],
    "trades": [
+    {
+     "ticket": 241697078,
+     "symbol": "XAUUSDp",
+     "dir": "LONG",
+     "opened": "2026-11-24 21:00",
+     "closed": "2026-11-25 13:39",
+     "pl": -355.45
+    },
     {
      "ticket": 240909609,
      "symbol": "XAUUSDp",
@@ -2743,15 +2757,7 @@
      "pl": -330.35
     }
    ],
-   "open_trades": [
-    {
-     "ticket": 241697078,
-     "symbol": "XAUUSDp",
-     "dir": "LONG",
-     "opened": "2026-11-24 21:00",
-     "pl": -186.75
-    }
-   ]
+   "open_trades": []
   }
  ]
 }
