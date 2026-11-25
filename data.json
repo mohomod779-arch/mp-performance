@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-25T18:14:00Z",
- "content_hash": "5e98f27efca6ad06e38df4cbebd0d9aef75b958330200fb7fde810cd3965f2e8",
+ "generated_at": "2026-11-25T18:44:00Z",
+ "content_hash": "a1db989f7c0c05518e49fd7d6a732be72b336c93aaad4b1622c4a9ca9bcc297e",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -1391,22 +1391,22 @@
    "market": "XAUUSD / NAS100 / FX",
    "desc": "مناطق دعم ومقاومة جديدة على فريم 15 دقيقة",
    "stats": {
-    "net_pl": 2665.13,
-    "trades": 48,
+    "net_pl": 2509.17,
+    "trades": 49,
     "wins": 20,
-    "losses": 28,
-    "win_rate": 41.7,
-    "profit_factor": 1.37,
+    "losses": 29,
+    "win_rate": 40.8,
+    "profit_factor": 1.34,
     "avg_win": 493.52,
-    "avg_loss": -257.33,
+    "avg_loss": -253.84,
     "best": 1631.84,
     "worst": -577.5,
     "max_dd": 2856.97,
-    "dd_now": 2038.4,
-    "loss_streak_now": 1,
+    "dd_now": 2194.36,
+    "loss_streak_now": 2,
     "loss_streak_max": 7,
-    "open_pl": 9.38,
-    "open_count": 1,
+    "open_pl": 0,
+    "open_count": 0,
     "first_trade": "2026-09-24"
    },
    "monthly": [
@@ -1424,8 +1424,8 @@
     },
     {
      "month": "2026-11",
-     "pl": -579.54,
-     "trades": 19,
+     "pl": -735.5,
+     "trades": 20,
      "wins": 7
     }
    ],
@@ -1717,9 +1717,23 @@
      "date": "2026-11-25",
      "pl": -186.62,
      "cum": 2665.13
+    },
+    {
+     "i": 49,
+     "date": "2026-11-25",
+     "pl": -155.96,
+     "cum": 2509.17
     }
    ],
    "trades": [
+    {
+     "ticket": 242629128,
+     "symbol": "XAUUSDp",
+     "dir": "SHORT",
+     "opened": "2026-11-25 18:05",
+     "closed": "2026-11-25 18:29",
+     "pl": -155.96
+    },
     {
      "ticket": 242224664,
      "symbol": "XAUUSDp",
@@ -2105,15 +2119,7 @@
      "pl": 523.55
     }
    ],
-   "open_trades": [
-    {
-     "ticket": 242629128,
-     "symbol": "XAUUSDp",
-     "dir": "SHORT",
-     "opened": "2026-11-25 18:05",
-     "pl": 9.38
-    }
-   ]
+   "open_trades": []
   },
   {
    "key": "I3",
