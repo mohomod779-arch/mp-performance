@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-25T14:44:00Z",
- "content_hash": "deaecc7654e796a035c8e76c22488573e0084c9204e61cdd48067cfcdd73ed1d",
+ "generated_at": "2026-11-25T15:14:00Z",
+ "content_hash": "db1a2479ae070178cbee3f5fb25b27f4e18b2d1f37c8ddc11a857fdc37488562",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -2283,29 +2283,29 @@
    "market": "NAS100",
    "desc": "كسر نطاق ما قبل افتتاح نيويورك",
    "stats": {
-    "net_pl": 3615.8,
-    "trades": 16,
+    "net_pl": 3517.76,
+    "trades": 17,
     "wins": 3,
-    "losses": 13,
-    "win_rate": 18.8,
-    "profit_factor": 3.62,
+    "losses": 14,
+    "win_rate": 17.6,
+    "profit_factor": 3.38,
     "avg_win": 1665.32,
-    "avg_loss": -106.17,
+    "avg_loss": -105.59,
     "best": 3638.04,
     "worst": -245.43,
-    "max_dd": 645.02,
-    "dd_now": 645.02,
-    "loss_streak_now": 7,
-    "loss_streak_max": 7,
-    "open_pl": 162.84,
-    "open_count": 1,
+    "max_dd": 743.06,
+    "dd_now": 743.06,
+    "loss_streak_now": 8,
+    "loss_streak_max": 8,
+    "open_pl": 0,
+    "open_count": 0,
     "first_trade": "2026-11-03"
    },
    "monthly": [
     {
      "month": "2026-11",
-     "pl": 3615.8,
-     "trades": 16,
+     "pl": 3517.76,
+     "trades": 17,
      "wins": 3
     }
    ],
@@ -2405,9 +2405,23 @@
      "date": "2026-11-24",
      "pl": -90.96,
      "cum": 3615.8
+    },
+    {
+     "i": 17,
+     "date": "2026-11-25",
+     "pl": -98.04,
+     "cum": 3517.76
     }
    ],
    "trades": [
+    {
+     "ticket": 242360232,
+     "symbol": "NAS100",
+     "dir": "SHORT",
+     "opened": "2026-11-25 14:35",
+     "closed": "2026-11-25 14:55",
+     "pl": -98.04
+    },
     {
      "ticket": 241460711,
      "symbol": "NAS100",
@@ -2537,15 +2551,7 @@
      "pl": -245.43
     }
    ],
-   "open_trades": [
-    {
-     "ticket": 242360232,
-     "symbol": "NAS100",
-     "dir": "SHORT",
-     "opened": "2026-11-25 14:35",
-     "pl": 162.84
-    }
-   ]
+   "open_trades": []
   },
   {
    "key": "S12G",
