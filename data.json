@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-27T13:14:00Z",
- "content_hash": "fc435f95d8bfad53b0b7f045598ccda45a629cd4c74070355fcf5d7a26df7c11",
+ "generated_at": "2026-11-27T14:44:00Z",
+ "content_hash": "853bb6d72d52076cc2f982773012f981428c78867623d163ce3512e3f46aba42",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -2381,20 +2381,20 @@
    "market": "NAS100",
    "desc": "كسر نطاق ما قبل افتتاح نيويورك",
    "stats": {
-    "net_pl": 3517.76,
-    "trades": 17,
+    "net_pl": 3420.08,
+    "trades": 18,
     "wins": 3,
-    "losses": 14,
-    "win_rate": 17.6,
-    "profit_factor": 3.38,
+    "losses": 15,
+    "win_rate": 16.7,
+    "profit_factor": 3.17,
     "avg_win": 1665.32,
-    "avg_loss": -105.59,
+    "avg_loss": -105.06,
     "best": 3638.04,
     "worst": -245.43,
-    "max_dd": 743.06,
-    "dd_now": 743.06,
-    "loss_streak_now": 8,
-    "loss_streak_max": 8,
+    "max_dd": 840.74,
+    "dd_now": 840.74,
+    "loss_streak_now": 9,
+    "loss_streak_max": 9,
     "open_pl": 0,
     "open_count": 0,
     "first_trade": "2026-11-03"
@@ -2402,8 +2402,8 @@
    "monthly": [
     {
      "month": "2026-11",
-     "pl": 3517.76,
-     "trades": 17,
+     "pl": 3420.08,
+     "trades": 18,
      "wins": 3
     }
    ],
@@ -2509,9 +2509,23 @@
      "date": "2026-11-25",
      "pl": -98.04,
      "cum": 3517.76
+    },
+    {
+     "i": 18,
+     "date": "2026-11-27",
+     "pl": -97.68,
+     "cum": 3420.08
     }
    ],
    "trades": [
+    {
+     "ticket": 244202005,
+     "symbol": "NAS100",
+     "dir": "SHORT",
+     "opened": "2026-11-27 14:35",
+     "closed": "2026-11-27 14:37",
+     "pl": -97.68
+    },
     {
      "ticket": 242360232,
      "symbol": "NAS100",
