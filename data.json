@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-27T15:44:00Z",
- "content_hash": "71794fe80dde43179660d6840039cd952702df48fb34b188053ed05c52d60938",
+ "generated_at": "2026-11-27T17:14:00Z",
+ "content_hash": "03fc47d12324008719d220f5801dda6a0bac870bd09d81b1659f596bf6a5bf8e",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -1489,8 +1489,8 @@
     "dd_now": 2428.33,
     "loss_streak_now": 3,
     "loss_streak_max": 7,
-    "open_pl": 0,
-    "open_count": 0,
+    "open_pl": -44.59,
+    "open_count": 1,
     "first_trade": "2026-09-24"
    },
    "monthly": [
@@ -2217,7 +2217,15 @@
      "pl": 523.55
     }
    ],
-   "open_trades": []
+   "open_trades": [
+    {
+     "ticket": 244347188,
+     "symbol": "NAS100",
+     "dir": "SHORT",
+     "opened": "2026-11-27 17:05",
+     "pl": -44.59
+    }
+   ]
   },
   {
    "key": "I3",
