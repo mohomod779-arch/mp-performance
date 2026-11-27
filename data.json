@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-27T07:44:01Z",
- "content_hash": "a4e3c25d3290e25a508a4af8258e31f05973f88e636f4a541ed53f7ce14e7146",
+ "generated_at": "2026-11-27T08:14:00Z",
+ "content_hash": "f5925452af329220d54b2ac7bee445f305c4f0db900242738d176797c2ce05a9",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -11,19 +11,19 @@
    "market": "XAUUSD",
    "desc": "ذهب، جلستا لندن ونيويورك",
    "stats": {
-    "net_pl": 4628.96,
-    "trades": 98,
+    "net_pl": 4530.71,
+    "trades": 99,
     "wins": 42,
-    "losses": 56,
-    "win_rate": 42.9,
-    "profit_factor": 1.35,
+    "losses": 57,
+    "win_rate": 42.4,
+    "profit_factor": 1.34,
     "avg_win": 427.98,
-    "avg_loss": -238.33,
+    "avg_loss": -235.87,
     "best": 822.0,
     "worst": -309.4,
     "max_dd": 1499.71,
-    "dd_now": 943.21,
-    "loss_streak_now": 0,
+    "dd_now": 1041.46,
+    "loss_streak_now": 1,
     "loss_streak_max": 6,
     "open_pl": 0,
     "open_count": 0,
@@ -44,8 +44,8 @@
     },
     {
      "month": "2026-11",
-     "pl": 527.48,
-     "trades": 33,
+     "pl": 429.23,
+     "trades": 34,
      "wins": 12
     }
    ],
@@ -637,9 +637,23 @@
      "date": "2026-11-26",
      "pl": 533.91,
      "cum": 4628.96
+    },
+    {
+     "i": 99,
+     "date": "2026-11-27",
+     "pl": -98.25,
+     "cum": 4530.71
     }
    ],
    "trades": [
+    {
+     "ticket": 243958419,
+     "symbol": "XAUUSDp",
+     "dir": "SHORT",
+     "opened": "2026-11-27 08:00",
+     "closed": "2026-11-27 08:13",
+     "pl": -98.25
+    },
     {
      "ticket": 243364586,
      "symbol": "XAUUSDp",
@@ -1447,7 +1461,7 @@
     "dd_now": 2194.36,
     "loss_streak_now": 2,
     "loss_streak_max": 7,
-    "open_pl": -147.71,
+    "open_pl": -196.88,
     "open_count": 1,
     "first_trade": "2026-09-24"
    },
@@ -2167,7 +2181,7 @@
      "symbol": "USDJPYp",
      "dir": "SHORT",
      "opened": "2026-11-25 19:05",
-     "pl": -147.71
+     "pl": -196.88
     }
    ]
   },
