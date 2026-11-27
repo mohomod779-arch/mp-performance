@@ -1,6 +1,6 @@
 {
- "generated_at": "2026-11-27T18:14:00Z",
- "content_hash": "33c223c6b1b59ce7c9c21a38b1ae6ece9c56249630cf37cd5c1c67cabeb0cb95",
+ "generated_at": "2026-11-27T18:44:00Z",
+ "content_hash": "100a09373bcd1988a5eeb2af641609169b27bc4172e57d4af14b2c754997c471",
  "account": "927302",
  "source": "broker-verified deals, BlackBull MT5 demo",
  "tz": "UTC",
@@ -1489,7 +1489,7 @@
     "dd_now": 2428.33,
     "loss_streak_now": 3,
     "loss_streak_max": 7,
-    "open_pl": -234.91,
+    "open_pl": -224.77,
     "open_count": 1,
     "first_trade": "2026-09-24"
    },
@@ -2223,7 +2223,7 @@
      "symbol": "NAS100",
      "dir": "SHORT",
      "opened": "2026-11-27 17:05",
-     "pl": -234.91
+     "pl": -224.77
     }
    ]
   },
